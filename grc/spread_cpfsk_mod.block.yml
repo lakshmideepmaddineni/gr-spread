@@ -1,0 +1,25 @@
+id: spread_cpfsk_mod
+label: CPFSK Modulator
+category: '[spread]'
+
+templates:
+  imports: from gnuradio import spread
+  make: spread.cpfsk_mod(${samples_per_symbol})
+
+parameters:
+- id: samples_per_symbol
+  label: Samples per Symbol
+  dtype: int
+  default: '8'
+
+inputs:
+- label: bits
+  domain: stream
+  dtype: byte
+
+outputs:
+- label: out
+  domain: stream
+  dtype: complex
+
+file_format: 1

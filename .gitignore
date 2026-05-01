@@ -1,0 +1,10 @@
+build/
+*.pyc
+__pycache__/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+docs/doxygen/
+*.user
